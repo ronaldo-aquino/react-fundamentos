@@ -1,7 +1,7 @@
 const Frangmento = () => {
   return (
     <>
-      <h1>Fragmento</h1>
+      <h2>Fragmento</h2>
       <h2>Tester</h2>
     </>
   );
