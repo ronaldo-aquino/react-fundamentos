@@ -3,6 +3,7 @@ import ComParametro from "./components/basicos/ComParametro";
 import Frangmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 import Card from "./components/layout/Card";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import "./App.css";
 import Familia from "./components/basicos/Familia";
 
@@ -12,7 +13,11 @@ const App = () => {
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
         <Card title="#05 Exemplo Children" color="#00C8F8">
-          <Familia lastName="Aquino"></Familia>
+          <Familia lastName="Aquino">
+            <FamiliaMembro firstName="Ronaldo" />
+            <FamiliaMembro firstName="Ana" />
+            <FamiliaMembro firstName="Gustavo" />
+          </Familia>
         </Card>
 
         <Card title="#04 Desafio Aleatório" color="#588C73">
