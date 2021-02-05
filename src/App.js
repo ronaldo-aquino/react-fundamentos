@@ -19,7 +19,8 @@ const App = () => {
         <Card title="#08 Renderização condicional" color="#982395">
           <ParOuImpar numero={21} />
           <UsuarioInfo usuario={{ nome: "Ronaldo" }} />
-          <UsuarioInfo usuario={{ email: "Aquino" }} />
+          {/* <UsuarioInfo usuario={{}} /> */}
+          {/* <UsuarioInfo /> */}
         </Card>
 
         <Card title="#07 Repetição desafio" color="#FF432E">
