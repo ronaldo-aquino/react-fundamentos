@@ -7,12 +7,17 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import "./App.css";
 import Familia from "./components/basicos/Familia";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
 const App = () => {
   return (
     <>
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
+      <Card title="#07 Repetição desafio" color="#FF432E">
+          <TabelaProdutos />
+        </Card>
+      
         <Card title="#06 Repetição" color="#FF4C65">
           <ListaAlunos />
         </Card>
