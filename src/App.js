@@ -9,15 +9,17 @@ import Familia from "./components/basicos/Familia";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 const App = () => {
   return (
     <>
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
-      
-      <Card title="#08 Renderização condicional" color="#982395">
+        <Card title="#08 Renderização condicional" color="#982395">
           <ParOuImpar numero={21} />
+          <UsuarioInfo usuario={{ nome: "Ronaldo" }} />
+          <UsuarioInfo usuario={{ email: "Aquino" }} />
         </Card>
 
         <Card title="#07 Repetição desafio" color="#FF432E">
