@@ -21,7 +21,7 @@ const App = () => {
     <>
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
-        <Card title="#13 Magasena desafio" color="#424242">
+        <Card title="#13 Magasena desafio" color="#89006E">
           <Mega numeroInicial={0} />
         </Card>
 
