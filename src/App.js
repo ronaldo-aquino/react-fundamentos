@@ -10,12 +10,17 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 
 const App = () => {
   return (
     <>
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
+        <Card title="#09 Comunicação direta" color="#59323c">
+          <DiretaPai />
+        </Card>
+
         <Card title="#08 Renderização condicional" color="#982395">
           <ParOuImpar numero={21} />
           <UsuarioInfo usuario={{ nome: "Ronaldo" }} />
