@@ -13,12 +13,17 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 const App = () => {
   return (
     <>
       <h1 className="title-component-app">Fundamentos React</h1>
       <div className="cards">
+        <Card title="#12 Componente contador class" color="#424242">
+          <Contador numeroInicial={0} />
+        </Card>
+
         <Card title="#11 Componente controlado" color="#E45F56">
           <Input />
         </Card>
