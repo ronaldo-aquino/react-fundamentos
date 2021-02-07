@@ -9,19 +9,35 @@ const calcFatorial = (num) => {
   return calcFatorial(n - 1) * n;
 };
 
+const parOrImpar = (num) => {
+  const n = parseInt(num);
+  if (n % 2 === 0) {
+    return "PAR";
+  }
+  return "ÍMPAR";
+};
+
 const UseEffect = (props) => {
   const [number, setNumber] = useState(1);
   const [fatorial, setFatorial] = useState(1);
+  const [numberPI, setNumberPI] = useState(1);
+  const [parImpar, serParImpar] = useState("");
 
   useEffect(() => {
     setFatorial(calcFatorial(number));
   }, [number]);
 
-  useEffect(() => {
-    if (fatorial < 1000000) {
-      document.title = `Number: ${fatorial}`;
+  const handleChange = (e) => {
+    if (numberPI < 1) {
+      return setNumberPI(1);
     }
-  }, [fatorial]);
+
+    setNumberPI(e.target.value);
+  };
+
+  useEffect(() => {
+    serParImpar(parOrImpar(numberPI));
+  }, [numberPI]);
 
   return (
     <div className="UseEffect">
@@ -45,7 +61,20 @@ const UseEffect = (props) => {
       </div>
 
       <SectionTitle title="Ecercício #02 " />
-      <div className="center"></div>
+      <div className="center">
+        <div className="center">
+          <div>
+            <span className="text">Status: </span>
+            <span className="text red">{parImpar}</span>
+          </div>
+          <input
+            type="number"
+            className="input"
+            value={numberPI}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
     </div>
   );
 };
